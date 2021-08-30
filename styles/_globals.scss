@@ -1,0 +1,30 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-padding-top: 60px;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    // margin-top: 80px;
+    font-size: 10px;
+    font-family: 'Prompt', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:visited{
+        color: white;
+    }
+}
+
+
+// font-family: 'Heebo', sans-serif;
+// font-family: 'Prompt', sans-serif;
