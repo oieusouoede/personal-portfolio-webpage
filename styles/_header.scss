@@ -3,7 +3,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(46, 46, 46);
+    background-color: $DarkGray;
     height: 60px;
     font-size: 1.5rem;
     font-weight: 300;
@@ -27,7 +27,7 @@ nav {
     padding: 0.8rem 2rem;
     transition: 150ms ease-in-out;
     &:hover{
-        background-color: rgb(40, 114, 59);
+        background-color: $LightGreen;
         
     }
 }
