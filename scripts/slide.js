@@ -1,5 +1,5 @@
 const welcomeSection = document.querySelector('.viewport');
-const slides = welcomeSection.getElementsByTagName('div');
+const slides = welcomeSection.getElementsByClassName('welcome-slide');
 const button = document.getElementById('button');
 var i = 0;
 
