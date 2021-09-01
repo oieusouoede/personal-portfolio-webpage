@@ -16,6 +16,7 @@ body {
   width: 100vw;
   font-size: 10px;
   font-family: 'Prompt', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -45,6 +46,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 10000;
 }
 
 #nav-links-container {
@@ -75,17 +77,87 @@ nav {
 #welcome-section {
   height: 100vh;
   width: 100%;
+  font-size: 3rem;
+  position: relative;
+  color: #2e2e2e;
+}
+
+#welcome-section .viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#welcome-section .viewport div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#welcome-section .viewport div.active {
+  opacity: 1;
+}
+
+#div1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3rem;
-  color: #2e2e2e;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #3d943d;
+}
+
+#div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #8b00cc;
+}
+
+#button {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background-image: url("https://img.icons8.com/ios-filled/50/2e2e2e/expand-arrow--v1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 1%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#projects {
+  position: relative;
 }
 
 footer {
@@ -98,6 +170,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -10,20 +10,21 @@
 </head>
 <body>
     <header>
-        <!-- The navbar should always be at the top of the viewport. -->
         <nav id="navbar">
             <div id="nav-links-container">
                 <a href="#welcome-section"><div class="nav-links">Sobre mim</div></a>
                 <a href="#projects"><div class="nav-links">Meus projetos</div></a>
                 <a href="#contacts"><div class="nav-links">Contatos</div></a>
             </div>
-            <!-- The navbar should contain at least one link that I can click 
-            on to navigate to different sections of the page. -->
         </nav>
     </header>
-    <!-- The height of the welcome section should be equal to the height of the viewport. -->
     <section id="welcome-section">
-        <h1>Olar</h1>
+        <div class="viewport">
+            <div id="div1" class="active">Alou</div>
+            <div id="div2">Olar</div>    
+        </div>
+        <div id="button" onclick="nextSlide()"></div>
+
     </section>
     <section id="projects">
         Projetos
@@ -54,5 +55,6 @@
         <!-- My portfolio should have a link with an id of profile-link, which 
         opens my GitHub or FCC profile in a new tab. -->
     </footer>
+    <script src="./scripts/slide.js"></script>
 </body>
 </html>
