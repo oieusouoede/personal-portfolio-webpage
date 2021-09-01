@@ -1,0 +1,25 @@
+<<<<<<< Updated upstream
+=======
+#projects {
+    text-align: center;
+    position: relative;
+    padding: 3rem;
+    background-color: $LightGreen;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100vh;
+
+}
+>>>>>>> Stashed changes
