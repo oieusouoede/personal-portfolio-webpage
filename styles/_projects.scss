@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 #projects {
     text-align: center;
     position: relative;
-    padding: 3rem;
-    background-color: $LightGreen;
+    padding: 2rem;
+    background-color: $ProjectsBackground;
     h1{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 300;
         color: white;
     }
@@ -19,13 +16,39 @@
     gap: 3rem;
     width: 100%;
     max-width: 1080px;
-    margin: 0 auto;
-    height: 100vh;
+    margin: 2rem auto;
+}
+
+.project-tile {
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.125rem;
+    background-color: $TileBackground;
+    box-shadow: 6px 6px 15px 0px rgba(0,0,0,0.57);
+    overflow: hidden;
+}
+
+.project-img {
+    transition: 150ms ease-in-out;
+    width: 98%;
+    margin-top: 0.2rem;
 
 }
->>>>>>> Stashed changes
-=======
-#projects {
-    position: relative;
+
+.project-tile:hover {
+    .project-img{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .title {
+        font-weight: 500;
+    }
 }
->>>>>>> main
+
+.title {
+    transition: 150ms ease-in-out;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}

@@ -33,7 +33,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #27302c;
+  background-color: #252525;
   height: 60px;
   font-size: 1.5rem;
   font-weight: 300;
@@ -71,7 +71,7 @@ nav {
 }
 
 .nav-links:hover {
-  background-color: #4E824F;
+  background-color: #3e4a3d;
 }
 
 #welcome-section {
@@ -119,7 +119,7 @@ nav {
   width: 100%;
   height: 100%;
   font-size: 3.5rem;
-  background-color: #2c4c3b;
+  background-color: #4a944b;
 }
 
 #div2 {
@@ -132,9 +132,7 @@ nav {
           justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: #1e453e;
-  background: #2c4c3b;
-  background: linear-gradient(106deg, #2c4c3b 50%, #4e824f 100%);
+  background-color: #0096c6;
 }
 
 #div2 img {
@@ -142,7 +140,7 @@ nav {
   left: 10%;
   width: 350;
   height: 410px;
-  opacity: 0.7;
+  opacity: 0.85;
   border-radius: 1.8rem;
   margin: 3rem;
   -webkit-transition: 0.5s ease-in-out;
@@ -173,7 +171,6 @@ nav {
   width: 80%;
   max-height: 600px;
   max-width: 1080px;
-  min-height: 520px;
   min-width: 920px;
   background-color: rgba(39, 48, 44, 0.5);
   border-radius: 0.2rem;
@@ -202,12 +199,12 @@ nav {
 #projects {
   text-align: center;
   position: relative;
-  padding: 3rem;
-  background-color: #4E824F;
+  padding: 2rem;
+  background-color: #006290;
 }
 
 #projects h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 300;
   color: white;
 }
@@ -220,12 +217,47 @@ nav {
   gap: 3rem;
   width: 100%;
   max-width: 1080px;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 2rem auto;
+}
+
+.project-tile {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  border-radius: 0.125rem;
+  background-color: #252525;
+  -webkit-box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.57);
+          box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.57);
+  overflow: hidden;
+}
+
+.project-img {
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  width: 98%;
+  margin-top: 0.2rem;
+}
+
+.project-tile:hover .project-img {
+  width: 100%;
+  margin-top: 0;
+}
+
+.project-tile:hover .title {
+  font-weight: 500;
+}
+
+.title {
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 1rem 0;
 }
 
 footer {
-  background-color: #27302c;
+  background-color: #252525;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,7 +302,7 @@ footer {
 }
 
 .footer-links:hover {
-  background-color: #4E824F;
+  background-color: #4a944b;
   -webkit-box-shadow: 0px 20px 24px -10px rgba(0, 0, 0, 0.69);
           box-shadow: 0px 20px 24px -10px rgba(0, 0, 0, 0.69);
   -webkit-transform: scale(1.2);
@@ -289,7 +321,7 @@ footer {
   background-image: url("/assets/codepen-icon.png");
 }
 
-#linkedin-link {
+#profile-link {
   background-image: url("/assets/linkedin-icon.png");
 }
 /*# sourceMappingURL=style.css.map */

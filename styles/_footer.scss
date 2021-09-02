@@ -1,5 +1,5 @@
 footer {
-    background-color: $DarkGray;
+    background-color: $HeaderNFooter;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,6 @@ footer {
     justify-content: flex-start;
     align-items: center;
     padding: 3rem 0;
-  //  font-family: 'Heebo', sans-serif;
 }
 
 .footer-title {
@@ -31,7 +30,7 @@ footer {
     margin: 0 1rem;
     transition: 100ms ease-in-out;
     &:hover{
-        background-color: $LightGreen;
+        background-color: $WelcomeBackground;
         box-shadow: 0px 20px 24px -10px rgba(0,0,0,0.69);
         transform: scale(1.2);
 
@@ -47,6 +46,6 @@ footer {
 #codepen-link {
     background-image: url("/assets/codepen-icon.png");
 }
-#linkedin-link {
+#profile-link {
     background-image: url("/assets/linkedin-icon.png");
 }
