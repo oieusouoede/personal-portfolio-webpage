@@ -1,6 +1,7 @@
 #welcome-section {
     height: 100vh;
     width: 100%;
+    margin-top: 60px;
     position: relative;
     color: white;
 }
@@ -34,8 +35,11 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     background-color: $WelcomeBackground;
+    h1{
+        font-weight: 300;
+    }
 
 }
 
@@ -43,6 +47,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: #0096c6;
@@ -50,16 +55,15 @@
     img {
         top: 15%;
         left: 10%;
-        width: 350;
-        height: 410px;
+        height: 75%;
         opacity: 0.85;
         border-radius: 1.8rem;
-        margin: 3rem;
+        margin: 2rem;
         transition: 0.5s ease-in-out;
     }
 
     article {
-        height: auto;
+        max-height: 100%;
         margin: 2rem;
         font-weight: 300;
         
@@ -67,19 +71,21 @@
             font-size: 2.5rem;
             font-weight: 300;
         }
+        p {
+            transition: 0.2s ease-in-out;
+        }
     }
 
     #content {
         position: absolute;
-        top: 15%;
         display: flex;
         align-items: center;
         height: 80%;
         width: 80%;
         max-height: 600px;
         max-width: 1080px;
-       // min-height: 520px;
-        min-width: 920px;
+        min-height: 420px;
+        min-width: 980px;
         background-color: hsla(153, 10%, 17%, 0.5);
         border-radius: 0.2rem;
         font-size: 1.125rem;

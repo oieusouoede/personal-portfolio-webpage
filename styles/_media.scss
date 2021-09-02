@@ -1,0 +1,51 @@
+@media screen and (max-height: 740px){
+    #welcome-section .viewport #div2 #content {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav {
+        height: auto;
+        position: relative;
+    }
+    #nav-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #welcome-section {
+        margin-top: 0;
+    }
+
+    #welcome-section #button {
+        width: 40px;
+        height: 40px;
+    }
+
+    #welcome-section .viewport #div2 {
+        align-items: flex-start;
+        height: 100%;
+        max-height: none;
+        min-height: none;
+    }
+    #welcome-section .viewport #div2 #content {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        min-width: 260px;
+        max-height: none;
+        min-height: none;
+        overflow: scroll;
+        img {
+            height: 410px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        #welcome-section .viewport #div1 {
+            font-size: 1.2rem;
+        }
+
+
+    }
+}
